@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElectroShop</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+            padding: 40px;
+            text-align: center;
+        }
+
+        button {
+            background: #2563eb;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        #productsContainer {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .product-card {
+            width: 220px;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px #00000012;
+            text-align: left;
+        }
+
+        .product-card strong {
+            color: #2563eb;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>ElectroShop</h1>
+    <p>Your Electronics Store</p>
+
+    <button id="loadProductsBtn">
+        Load Products
+    </button>
+
+    <div id="productsContainer"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>
