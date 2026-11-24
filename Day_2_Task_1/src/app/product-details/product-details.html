@@ -1,0 +1,49 @@
+<section class="section">
+  <h2>Product Details</h2>
+  <div class="details-card">
+    <div class="details-info">
+      <img [src]="productImage" [alt]="productName" class="details-img" />
+      <div class="details-text">
+        <h3>{{ productName }}</h3>
+        <p class="desc">{{ productDescription }}</p>
+        <p><strong>Price:</strong> ${{ productPrice }}</p>
+        <p><strong>Discount:</strong> {{ discountPercentage }}%</p>
+        <p>
+          <strong>Final Price:</strong>
+          ${{ productPrice - (productPrice * discountPercentage) / 100 }}
+        </p>
+        <p>
+          <strong>Availability:</strong>
+          {{ isAvailable ? 'Available' : 'Unavailable' }}
+        </p>
+
+        <div class="quantity-box">
+          <strong>Quantity:</strong>
+          <button (click)="decreaseQuantity()">-</button>
+          <span>{{ quantity }}</span>
+          <button (click)="increaseQuantity()">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="update-box">
+      <h4>Update Product Details</h4>
+      <div class="form-group">
+        <label>Product Name:</label>
+        <input type="text" [(ngModel)]="productName" />
+      </div>
+      <div class="form-group">
+        <label>Description:</label>
+        <input type="text" [(ngModel)]="productDescription" />
+      </div>
+      <div class="form-group">
+        <label>Price ($):</label>
+        <input type="number" [(ngModel)]="productPrice" />
+      </div>
+      <div class="form-group">
+        <label>Discount (%):</label>
+        <input type="number" [(ngModel)]="discountPercentage" />
+      </div>
+    </div>
+  </div>
+</section>
