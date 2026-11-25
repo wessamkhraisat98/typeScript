@@ -1,0 +1,84 @@
+<section class="section">
+  <h2>Our Products</h2>
+  <div class="grid products-grid">
+    <!-- Product 1: Laptop -->
+    <div class="card">
+      <img [src]="products[0].image" [alt]="products[0].name" class="product-img" />
+      <h3>{{ products[0].name }}</h3>
+      <p class="desc">{{ products[0].desc }}</p>
+      <p class="price">${{ products[0].price }}</p>
+      <p class="status">{{ products[0].isAvi ? 'Available' : 'Unavailable' }}</p>
+      <button
+        class="buy-btn"
+        [disabled]="!products[0].isAvi"
+        (click)="buyNow(products[0].name)"
+      >
+        Buy Now
+      </button>
+    </div>
+
+    <!-- Product 2: Smartphone -->
+    <div class="card">
+      <img [src]="products[1].image" [alt]="products[1].name" class="product-img" />
+      <h3>{{ products[1].name }}</h3>
+      <p class="desc">{{ products[1].desc }}</p>
+      <p class="price">${{ products[1].price }}</p>
+      <p class="status">{{ products[1].isAvi ? 'Available' : 'Unavailable' }}</p>
+      <button
+        class="buy-btn"
+        [disabled]="!products[1].isAvi"
+        (click)="buyNow(products[1].name)"
+      >
+        Buy Now
+      </button>
+    </div>
+
+    <!-- Product 3: Headphones -->
+    <div class="card">
+      <img [src]="products[2].image" [alt]="products[2].name" class="product-img" />
+      <h3>{{ products[2].name }}</h3>
+      <p class="desc">{{ products[2].desc }}</p>
+      <p class="price">${{ products[2].price }}</p>
+      <p class="status">{{ products[2].isAvi ? 'Available' : 'Unavailable' }}</p>
+      <button
+        class="buy-btn"
+        [disabled]="!products[2].isAvi"
+        (click)="buyNow(products[2].name)"
+      >
+        Buy Now
+      </button>
+    </div>
+
+    <!-- Product 4: Smart Watch -->
+    <div class="card">
+      <img [src]="products[3].image" [alt]="products[3].name" class="product-img" />
+      <h3>{{ products[3].name }}</h3>
+      <p class="desc">{{ products[3].desc }}</p>
+      <p class="price">${{ products[3].price }}</p>
+      <p class="status">{{ products[3].isAvi ? 'Available' : 'Unavailable' }}</p>
+      <button
+        class="buy-btn"
+        [disabled]="!products[3].isAvi"
+        (click)="buyNow(products[3].name)"
+      >
+        Buy Now
+      </button>
+    </div>
+
+    <!-- Product 5: Keyboard -->
+    <div class="card">
+      <img [src]="products[4].image" [alt]="products[4].name" class="product-img" />
+      <h3>{{ products[4].name }}</h3>
+      <p class="desc">{{ products[4].desc }}</p>
+      <p class="price">${{ products[4].price }}</p>
+      <p class="status">{{ products[4].isAvi ? 'Available' : 'Unavailable' }}</p>
+      <button
+        class="buy-btn"
+        [disabled]="!products[4].isAvi"
+        (click)="buyNow(products[4].name)"
+      >
+        Buy Now
+      </button>
+    </div>
+  </div>
+</section>

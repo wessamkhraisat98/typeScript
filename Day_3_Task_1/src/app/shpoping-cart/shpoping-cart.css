@@ -1,0 +1,30 @@
+.section {
+  margin-bottom: 28px;
+}
+
+.section h2 {
+  margin: 0 0 14px;
+  font-size: 22px;
+  color: #0f172a;
+}
+
+.cart-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.cart-card p {
+  margin: 0 0 8px;
+  font-size: 15px;
+  color: #334155;
+}
+
+.cart-card .total {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid #e2e8f0;
+  font-size: 17px;
+  color: #0284c7;
+}

@@ -1,0 +1,8 @@
+mkdir StudentManagementSystem
+cd StudentManagementSystem
+code .
+npm init -y
+npm install -D typescript
+npx tsc --init
+mkdir src
+New-Item src/app.ts -ItemType File

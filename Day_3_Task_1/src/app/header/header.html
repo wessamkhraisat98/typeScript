@@ -1,0 +1,10 @@
+<header class="store-header">
+  <div class="header-top">
+    <div>
+      <h1>{{ storeName }}</h1>
+      <p class="welcome">{{ welcomeMessage }}</p>
+      <p class="slogan">{{ storeSlogan }}</p>
+    </div>
+    <span class="status-badge" [class.status-closed]="!isStoreOpen">{{ storeStatus }}</span>
+  </div>
+</header>

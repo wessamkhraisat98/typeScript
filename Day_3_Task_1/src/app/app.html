@@ -1,0 +1,25 @@
+<div class="container">
+  <app-header></app-header>
+  <app-navbar></app-navbar>
+  <app-product-list></app-product-list>
+
+  <app-product-details
+    [productName]="productName()"
+    [productDescription]="productDescription()"
+    [productPrice]="productPrice()"
+    [isAvailable]="isAvailable()"
+    (data)="bindData($event)"
+  ></app-product-details>
+
+  <button class="switch-btn" (click)="changeProduct()">
+    Change Product (Wireless Headphones)
+  </button>
+
+  <app-shpoping-cart
+    [productName]="cartProductName"
+    [productPrice]="cartPrice"
+    [quantity]="cartQuantity"
+  ></app-shpoping-cart>
+
+  <app-footer></app-footer>
+</div>
