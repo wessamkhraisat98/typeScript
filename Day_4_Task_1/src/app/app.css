@@ -1,0 +1,21 @@
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.switch-btn {
+  margin-bottom: 24px;
+  background-color: #0284c7;
+  color: #ffffff;
+  border: none;
+  padding: 9px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.switch-btn:hover {
+  background-color: #0369a1;
+}

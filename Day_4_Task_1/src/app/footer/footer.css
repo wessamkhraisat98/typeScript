@@ -1,0 +1,24 @@
+.store-footer {
+  background-color: #1e293b;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+.store-footer h3 {
+  margin: 0 0 6px;
+  font-size: 18px;
+}
+
+.store-footer p {
+  margin: 0 0 4px;
+  font-size: 14px;
+  color: #cbd5e1;
+}
+
+.copyright {
+  font-size: 13px;
+  color: #94a3b8;
+}
